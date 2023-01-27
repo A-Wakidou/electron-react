@@ -1,0 +1,205 @@
+.component-ui-button {
+  width: 100%;
+  height: 45px;
+  border: 0;
+  font: normal normal 700 18px/20px Roboto;
+  color: white;
+  cursor: pointer;
+}
+
+.component-ui-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.component-ui-checkbox .component-ui-checkbox-span {
+  font-family: "Abel";
+  font-size: small;
+  margin-left: 10px;
+}
+.component-ui-checkbox .component-ui-checkbox-input {
+  margin: 0;
+  height: 18px !important;
+  width: 18px !important;
+}
+
+.component-ui-input {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+.component-ui-input .component-ui-input-span {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.2rem;
+  font: normal normal 500 16px/12px "Roboto";
+}
+.component-ui-input .component-ui-input-input {
+  border: 0;
+  background-color: #F9F9F9;
+  height: 25px;
+  font: normal normal normal 18px/12px "Abel";
+  color: rgba(192, 0, 0, 0.8);
+}
+.component-ui-input .component-ui-input-input:focus {
+  outline: none;
+}
+
+.component-ui-input-active {
+  border-bottom: 2px solid black;
+}
+
+.component-ui-radio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.component-ui-radio .component-ui-radio-span {
+  color: #666565;
+  margin-left: 10px;
+}
+.component-ui-radio .component-ui-radio-input {
+  margin: 0;
+  height: 20px !important;
+  width: 21px !important;
+}
+
+.component-ui-select {
+  background-color: #F9F9F9;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+.component-ui-select .component-ui-select-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.component-ui-select .component-ui-select-result .component-ui-select-result-text {
+  display: flex;
+  flex-direction: column;
+}
+.component-ui-select .component-ui-select-result .component-ui-select-result-text .component-ui-select-span {
+  color: #666565;
+  margin-left: 10px;
+}
+.component-ui-select .component-ui-select-result .component-ui-select-result-text .component-ui-select-span-value {
+  margin-left: 10px;
+  font: normal normal normal 18px/12px "Abel";
+  color: rgba(192, 0, 0, 0.8);
+}
+.component-ui-select .hide {
+  display: none;
+}
+.component-ui-select .component-ui-select-items {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: 9999;
+}
+.component-ui-select .component-ui-select-items .component-ui-select-items-search {
+  color: #b5b2b2;
+  background-color: #fff;
+  box-shadow: rgba(177, 177, 177, 0.5) 0.7px 0.7px 20px 0px;
+  border: 0;
+  padding-left: 25px;
+  font-size: large;
+  height: 60px;
+  min-height: 45px !important;
+  border-bottom: 1px solid rgba(236, 230, 230, 0.65);
+}
+.component-ui-select .component-ui-select-items .component-ui-select-items-search:focus {
+  outline: none;
+}
+.component-ui-select .component-ui-select-items .component-ui-select-items-span {
+  border-bottom: 1px solid #eee;
+  padding: 0px 20px;
+  display: flex;
+  min-height: 35px !important;
+  align-items: center;
+}
+.component-ui-select .component-ui-select-items .component-ui-select-items-span:hover {
+  background-color: #F9F9F9;
+}
+
+.component-ui-table {
+  width: 100%;
+}
+.component-ui-table table {
+  width: 100%;
+  border-spacing: 0;
+}
+.component-ui-table table th {
+  text-align: start;
+  border-bottom: 1.5px solid #F9F9F9;
+  padding: 10px 0;
+  padding-left: 8px;
+  font-weight: 400;
+}
+.component-ui-table table td {
+  border-bottom: 1.5px solid #F9F9F9;
+  padding: 10px 0;
+  padding-left: 8px;
+}
+.component-ui-table table tbody tr:hover {
+  background-color: #fafafa;
+}
+.component-ui-table .component-ui-table-pagin {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem;
+}
+.component-ui-table .component-ui-table-nor-data {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #F9F9F9;
+  border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.component-ui-table .component-ui-table-nor-data .component-ui-table-nor-data-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component-ui-pagination {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.component-ui-pagination-active {
+  border: 1px solid #1677ff;
+  color: #1677ff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.component-ui-pagination-not-clickabel {
+  cursor: initial;
+  color: #cccbcb;
+}
+
+/*# sourceMappingURL=index.css.map */

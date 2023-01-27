@@ -1,0 +1,41 @@
+{
+  "name": "my-lib-ui",
+  "version": "1.0.0",
+  "description": "my components ui",
+  "author": "KENNEDOUANLA",
+  "license": "MIT",
+  "repository": "KENNEDOUANLA/projet_final_dilane_wakidou",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "sass:watch": "sass -w src",
+    "yalc:build": "npm run sass:build && npm run build &&  yalc publish --private",
+    "sass:build": "sass src/index.scss dist/index.css"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^5.0.0",
+    "node-sass": "^8.0.0"
+  },
+  "yalcSig": "3c349e4d85ee7f0b722dc1e68bf4e5f9"
+}
